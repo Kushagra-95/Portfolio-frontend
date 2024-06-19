@@ -18,7 +18,7 @@ const Contact= () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try {
-          const res=await axios.post('http://localhost:3000/post',formData,{
+          const res=await axios.post('https://portfolio-backend-vgae.onrender.com/post',formData,{
             headers:{
               'Content-Type': 'application/json'
             }
